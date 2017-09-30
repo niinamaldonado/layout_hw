@@ -1,26 +1,126 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <title>My Homework 3</title>
   <link href="css/reset.css" rel="stylesheet" />
+
+<style>
+body {
+    margin: 0;
+    color: #FFFFFF;
+    width: 800px;
+    justify-content: center;
+}
+/* rid link color */
+
+a:link {
+    color: white;
+}
+a:visited {
+    color: white;
+}
+a:hover {
+    color: #6D6D6B;
+}
+
+/* header style */
+.header {
+    position: static;
+  background-color:#d5f4e6;
+  height: 20px;
+  width: 800px;
+}
+/* navigation link styles */
+.navigation {
+    position: static;
+  background-color: #80ced6;
+  column-count:6;
+  height: 30px;
+  width: 800px;
+}
+
+/* article style */
+.article {
+    position: static;
+  background-color:#E6E2C3;
+  width: 66%;
+  text-align:center;
+}
+
+/* section style */
+.section {
+    position: static;
+  background-color:#618685;
+  height: 50px;
+  width: 100%; /* 100% of article */
+  text-align:center;
+}
+
+/* aside style */
+.aside {
+    position:sticky;
+  background-color: #d5f4e6;
+  height: 180px;
+  width: 33%;
+  text-align: center;
+
+}
+
+/* footer style */
+.footer {
+    position: static;
+  background-color: #80ced6;
+  height: 20px;
+  width: 800px;
+  text-align: center;
+
+}
+
+
+</style>
+
+
 </head>
 <body>
-  <header>&lt;Header&gt;</header>
+  <div class="header">
+  <header><center>&lt;Header&gt;</center></header>
+</div>
+
   <nav>
+    <div class="navigation">
+
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="static.html">Static Layout</a></li>
-	  <li><a href="absolute.html">Absolute Layout</a></li>
+      <li><a href="absolute.html">Absolute Layout</a></li>
       <li><a href="relative.html">Relative Layout</a></li>
       <li><a href="float.html">Float Layout</a></li>
-      <li><a href="flexbox.html">Flexbox Layout (Extra Credit)</a></li>
+      <li><a href="flexbox.html">Flexbox Layout (EC)</a></li>
     </ul>
+  </div>
   </nav>
+
+  <div class="article">
   <article> &lt;My Article&gt;
-    <section>&lt;Section One&gt;</section>
+    <div class="section">
+      <section>&lt;Section One&gt;</section>
+    </div>
+    <br>
+    <div class="section">
     <section>&lt;Section Two&gt;</section>
+    </div>
+    <br>
+    <br>
+
   </article>
+</div>
+<div class="aside">
   <aside>&lt;Aside&gt;</aside>
+</div>
+  <div class="footer">
   <footer>&lt;Footer&gt;</footer>
+</div>
+
 </body>
 </html>
